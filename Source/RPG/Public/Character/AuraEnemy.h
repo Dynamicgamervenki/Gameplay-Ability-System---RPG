@@ -18,4 +18,7 @@ class RPG_API AAuraEnemy : public AAuraCharacterBase ,public IEnemyInterface
 	public:
 	virtual void HighlightActor() override;
 	virtual void UnHightlightActor() override;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool bHighlighted = false;
 };
